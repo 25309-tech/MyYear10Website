@@ -55,14 +55,19 @@ img {
 }
 
 /* Styling for the individual topic cards rounded edges background color and a drop shadow */
-.topic-card{
+.topic-card1{
     background-color: rgb(100, 100, 150);
     color: white;
     padding: 1em;
     border-radius: 0.5em;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
-
+.topic-card2{
+    background-color: rgb(100, 100, 150);
+    color: white;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
 /* Styling for the topic card titles */
 .topic-card-text{
     font-size: 1.5em;
