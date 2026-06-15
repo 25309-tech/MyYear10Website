@@ -65,7 +65,7 @@ img {
 .topic-card2{
     background-color: rgb(100, 100, 150);
     color: white;
-    border-radius: 0.5em;
+    padding: 1em;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 /* Styling for the topic card titles */
