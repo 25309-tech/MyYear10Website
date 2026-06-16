@@ -47,7 +47,6 @@ img {
 .topic-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 6em;
     /* bring the whole section in off the sides of the page */
     width: 70%;
     /* top margin of 3em and center right/left */
@@ -66,6 +65,7 @@ img {
     background-color: rgb(100, 100, 150);
     color: white;
     padding: 1em;
+    border-radius: 0.5em;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 /* Styling for the topic card titles */
