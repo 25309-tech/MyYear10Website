@@ -44,7 +44,7 @@ img {
 }
 
 /* Three column grid with a nice big gap */
-.topic-content1{
+.topic-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 6em;
@@ -53,15 +53,7 @@ img {
     /* top margin of 3em and center right/left */
     margin: 3em auto;
 }
-.topic-content2{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
-    /* bring the whole section in off the sides of the page */
-    width: 70%;
-    /* top margin of 3em and center right/left */
-    margin: 3em auto;
-}
+
 /* Styling for the individual topic cards rounded edges background color and a drop shadow */
 .topic-card1{
     background-color: rgb(100, 100, 150);
