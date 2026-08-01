@@ -50,17 +50,19 @@
         <div class="topic-content">
             <!-- one "card" which includes an image with a text below it -->
             <div class="topic-card1">
-                <h2 style="color:black; text-align:left;" id="1"></h2>
+                <h2 style="color:white; text-align:left;" id="1"></h2>
                 <input type="text" placeholder="Type here" id="2">
                 <h2 class="topic-card-text">Typing Simulator</h2>
             </div>
             <div class="topic-card1">
-                <img src="images/Background.png" alt="change this too!">
-                <h2 class="topic-card-text">My Background I Made</h2>
+                <h2 style="color:white; text-align:left;" id="3"></h2>
+                <input type="text" placeholder="Type here" id="4">
+                <h2 class="topic-card-text">Ascii to binary (work in progress)</h2>
             </div>
             <div class="topic-card1">
-                <img src="images/Snowflake.png" alt="change this too!">
-                <h2 class="topic-card-text">The Snowflake I Made</h2>
+                <h2 style="color:white; text-align:left;" id="5"></h2>
+                <input type="text" placeholder="Type here" id="6">
+                <h2 class="topic-card-text">Binary to ascii (work in progress)</h2>
             </div>
         </div>
     </section>
@@ -71,8 +73,18 @@
 <script>
     var a = document.getElementById("1")
     var b = document.getElementById("2")
+    var c = document.getElementById("3")
+    var d = document.getElementById("4")
+    var e = document.getElementById("5")
+    /*var f = []
+    const g = {}*/
     function c (){
         a.textContent = b.value
+        /*let dSplit = d.value.split("")
+        for (i of dSplit){
+            f.push(g[i])
+        }
+        c.textContent = f.join(" ")*/
     }
     setInterval(c, 100)
 </script>
