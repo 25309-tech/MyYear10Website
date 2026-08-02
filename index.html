@@ -76,15 +76,24 @@
     var c = document.getElementById("3")
     var d = document.getElementById("4")
     var e = document.getElementById("5")
-    var f = []
+    var f= document.getElementById("6")
+    var g = []
     function x (){
         a.textContent = b.value
         let dSplit = d.value.split("")
         for (let i of dSplit){
             const z = i.charCodeAt(0).toString(2)
-            f.push(z)
+            g.push(z)
         }
-        c.textContent = f.join(" ")
+        c.textContent = g.join(" ")
+        g = []
+        let fSplit =  f.value.split("")
+        for (let i of fSplit){
+            const z = i.charCodeAt(0).toString(2)
+            g.push(z)
+        }
+        e.textContent = g.join(" ")
+        g = []
     }
     setInterval(x, 100)
 </script>
