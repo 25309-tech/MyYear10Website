@@ -87,12 +87,12 @@
         }
         c.textContent = g.join(" ")
         g = []
-        let fSplit =  f.value.split("")
+        let fSplit =  f.value.split(" ")
         for (let i of fSplit){
-            const z = i.charCodeAt(0).toString(2)
+            const z = String.fromCodePoint(parseInt(i, 2))
             g.push(z)
         }
-        e.textContent = g.join(" ")
+        e.textContent = g.join("")
         g = []
     }
     setInterval(x, 100)
