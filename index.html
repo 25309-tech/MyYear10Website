@@ -78,7 +78,13 @@
     var e = document.getElementById("5")
     var f = document.getElementById("6")
     var g = []
+    var h = ""
+    var i = ""
+    var j = ""
     function x (){
+        if (h == b.value && i == d.value && j == f.value){
+            g = []
+        } else {
         a.textContent = b.value
         let dSplit = d.value.split("")
         for (let i of dSplit){
@@ -94,6 +100,11 @@
         }
         e.textContent = g.join("")
         g = []
+        h = b.value
+        i = d.value
+        j = f.value
+        }
+       
     }
     setInterval(x, 100)
 </script>
