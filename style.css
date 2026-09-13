@@ -9,6 +9,28 @@ html {
     box-sizing: border-box;
 }
 
+.page-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    padding: 1.5rem 1rem 0.5rem;
+}
+
+.page-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(20, 60, 110, 0.8);
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.page-links a:hover {
+    background-color: rgba(40, 90, 150, 0.9);
+}
+
 /* reset for images to ensure they ar 100% of the parent container width */
 img {
     width: 100%;
