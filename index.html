@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>My Showcase Website</title>
+    <link rel="icon" type="image/png" href="images/fav2.png">
 </head>
 <!-- This is the main body of the website- ALL your content goes AFTER the <body> tag and before the </body> tag -->
 <body> <!-- git config --global user.name "" and git config --global user.email "25309@burnside.school.nz" -->
@@ -76,7 +77,17 @@
     var e = document.getElementById("5")
     var f = document.getElementById("6")
     var g = []
+    let colorPhase = 0;
     function x (){
+        const darkBlue = { r: 9, g: 55, b: 107 };
+        const lightBlue = { r: 173, g: 216, b: 230 };
+        const t = (Math.sin(colorPhase) + 1) / 2;
+        const r = Math.round(lightBlue.r + (darkBlue.r - lightBlue.r) * t);
+        const gVal = Math.round(lightBlue.g + (darkBlue.g - lightBlue.g) * t);
+        const bVal = Math.round(lightBlue.b + (darkBlue.b - lightBlue.b) * t);
+        document.body.style.backgroundColor = `rgb(${r}, ${gVal}, ${bVal})`;
+        colorPhase += 0.02;
+
         a.textContent = b.value
         let dSplit = d.value.split("")
         for (let i of dSplit){
@@ -160,7 +171,6 @@
         </div>
         <div style="max-width: 650px; margin: 2rem auto; background: rgb(25, 25, 40); border-radius: 12px; padding: 1.5rem; text-align: center; box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);">
             <p style="color: white; margin: 0 0 1rem; font-size: 1.1rem;">Play my game</p>
-            <iframe frameborder="0" src="https://25309.itch.io/my-game?secret=OWJwTdXdXRkji8Nh3WUjE1cRL2s" allowfullscreen="" width="960" height="560"><a href="https://25309.itch.io/my-game">Play My Game on itch.io</a></iframe>
             <a href="https://25309.itch.io/my-game?secret=OWJwTdXdXRkji8Nh3WUjE1cRL2s" target="_blank" rel="noreferrer" style="display: inline-block; background: #fa5c5c; color: white; text-decoration: none; padding: 0.9rem 1.6rem; border-radius: 8px; font-weight: bold;">Play on itch.io</a>
         </div>
     </section>
