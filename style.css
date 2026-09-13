@@ -39,7 +39,7 @@ img {
     color: white;
     font-size: 2em;
     padding: 0.1em 3em;
-    background-color: rgb(100, 100, 150);
+    background-color: rgb(50, 50, 100);
     text-align: center;
 }
 
@@ -56,14 +56,14 @@ img {
 
 /* Styling for the individual topic cards rounded edges background color and a drop shadow */
 .topic-card1{
-    background-color: rgb(100, 100, 150);
+    background-color: rgb(50, 50, 100);
     color: white;
     padding: 1em;
     border-radius: 0.5em;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 .topic-card2{
-    background-color: rgb(100, 100, 150);
+    background-color: rgb(50, 50, 100);
     color: white;
     padding: 1em;
     border-radius: 0.5em;
@@ -85,6 +85,11 @@ img {
     padding: 3em 3em;
 }
 h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+h6 {
     color: white;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
