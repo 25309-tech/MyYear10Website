@@ -22,6 +22,7 @@
         <a href="#c">3D Modelling</a>
         <a href="#d">Design For Manufacturing</a>
         <a href="#e">Game Design</a>
+        <a href="#f">Reflection</a>
     </div>
 
 <!-- Topic one ------------------------------------------------------------------------------------------------- -->
@@ -86,15 +87,19 @@
     var f = document.getElementById("6")
     var g = []
     let colorPhase = 0;
+    let colorDir = 1;
     function x (){
         const darkBlue = { r: 20, g: 75, b: 130 };
         const lightBlue = { r: 190, g: 240, b: 250 };
-        const t = (Math.sin(colorPhase) + 1) / 2;
+        // linear ping-pong between 0 and 1 using colorPhase and colorDir
+        const t = colorPhase;
         const r = Math.round(lightBlue.r + (darkBlue.r - lightBlue.r) * t);
         const gVal = Math.round(lightBlue.g + (darkBlue.g - lightBlue.g) * t);
         const bVal = Math.round(lightBlue.b + (darkBlue.b - lightBlue.b) * t);
         document.body.style.backgroundColor = `rgb(${r}, ${gVal}, ${bVal})`;
-        colorPhase += 0.02;
+        colorPhase += 0.02 * colorDir;
+        if (colorPhase >= 1) { colorPhase = 1; colorDir = -1; }
+        else if (colorPhase <= 0) { colorPhase = 0; colorDir = 1; }
 
         a.textContent = b.value
         let dSplit = d.value.split("")
@@ -184,7 +189,15 @@
         </div>
     </section>
 <!-- Copy and paste the section from above to make your next section -->
-
+<section class="topic">
+        <!-- the topic title a big bar with text in it -->
+        <div class="topic-title">
+            <h1 id="f">Reflection</h1>
+        </div>
+        <h1 style="color:black; text-align: center; width: 100%;">Overall I think that digital technology is an interesting subject. I’ve learnt many fun things like how to make 3D shapes and animations using blender. I learnt how to write python code to do various stuff, like drawing shapes with a varied amount of sides depending on the input. I made fun games using Gdevelop and learnt how to solve different types of problems while making the game. I look forward to the student lead project, I wonder what I can achieve with a term of time at my disposal!</h1>
+            
+        </div>
+    </section>
 
 
     <!-- A Simple Website Footer ------------------------------------------------------------------------------ -->
